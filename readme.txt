@@ -65,6 +65,44 @@ python scripts/test_video.py --weights weights/yolov8_best.pt --source dataset/t
 ```
 
 ---
+### 🔹 Training Graphs
+
+<p float="left">
+  <img src="results/graphs/loss_curve.png" width="45%" />
+  <img src="results/graphs/mAP_curve.png" width="45%" />
+</p>
+
+### 🔹 Test Scenarios Evaluated:
+- Daylight and night
+- Rain and dazzle lighting
+- Crowded intersections
+- Urban traffic flow
+
+### 🔹 Detected Elements:
+- Arrows (Straight, Left, Right, Combo)
+- Pedestrian Crossings
+- Junction Boxes
+- Bus Lanes
+- Slow Markings
+
+### 🔹 Performance Comparison:
+
+| Model             | F1 Score | FPS | Comments                             |
+|------------------|----------|-----|--------------------------------------|
+| YOLOv8           | 1.00     | 91  | Highest accuracy and speed           |
+| SSD-MobileNet-v2 | 0.84     | 72  | Fast, but struggles in poor lighting |
+| Mask R-CNN       | 0.90     | 45  | Accurate but slower and heavier      |
+
+📈 Results visualized in `results/graphs/` and predictions saved in `results/predictions/`
+
+---
+
+## 🔮 Future Work
+
+- Dataset expansion to fog/snow scenarios
+- LiDAR/Radar sensor fusion
+- Optimized deployment on edge devices
+
 
 ## 📊 Results
 
