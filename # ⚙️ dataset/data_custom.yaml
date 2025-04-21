@@ -1,0 +1,6 @@
+``yaml
+train: dataset/train
+val: dataset/val
+nc: 11
+names: ['Right Arrow', 'Diamond', 'Pedestrian Crossing', 'Cycle Lane', 'Left Arrow', 'Junction Box', 'Slow', 'Straight Arrow', 'Straight-Left Arrow', 'Straight-Right Arrow', 'Bus Lane']
+```
