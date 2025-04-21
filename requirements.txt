@@ -1,0 +1,9 @@
+# 📄 requirements.txt
+
+```txt
+ultralytics==8.0.20
+opencv-python
+matplotlib
+numpy
+tqdm
+scikit-learn
